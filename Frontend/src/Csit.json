@@ -1,0 +1,55 @@
+{
+    "title": "CSIT Notes",
+    "data": [
+        {
+            "sem": "First Semester",
+            "subjects": [
+                {
+                    "name": "Mathematics",
+                    "link": "mathematics"
+                },
+                {
+                    "name": "English",
+                    "link": "english"
+                },
+                {
+                    "name": "Physics",
+                    "link": "physics"
+                },
+                {
+                    "name": "Chemistry",
+                    "link": "chemistry"
+                },
+                {
+                    "name": "Biology",
+                    "link": "biology"
+                }
+            ]
+        },
+        {
+            "sem": "Second Semester",
+            "subjects": [
+                {
+                    "name": "Mathematics",
+                    "link": "mathematics"
+                },
+                {
+                    "name": "English",
+                    "link": "english"
+                },
+                {
+                    "name": "Physics",
+                    "link": "physics"
+                },
+                {
+                    "name": "Chemistry",
+                    "link": "chemistry"
+                },
+                {
+                    "name": "Biology",
+                    "link": "biology"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+[
+    {
+        "_id": {
+            "$oid": "671db59c01152140037fb434"
+        },
+        "title": "BCA",
+        "data": [
+            {
+                "sem": "First Semester",
+                "subjects": [
+                    {
+                        "name": "Mathematics",
+                        "link": "1SRhrnQVbu2qTR02OhGANbzRgPlszkCMo"
+                    },
+                    {
+                        "name": "English",
+                        "link": "1lv4BjtzGDqofEVzlexQ8Qpjwu3MmYqMC"
+                    },
+                    {
+                        "name": "Physics",
+                        "link": "1RctX_cd7Kn5DVvktpk5G5KGOhdMK6Cyi"
+                    },
+                    {
+                        "name": "Chemistry",
+                        "link": "1Njy37Z9GF_DvGYPccVVk3xhaUztuTN8C"
+                    },
+                    {
+                        "name": "Biology",
+                        "link": "1l6-02lqjAekHN1c4BvE6D_hEdHej8EFw"
+                    }
+                ]
+            },
+            {
+                "sem": "Second Semester",
+                "subjects": [
+                    {
+                        "name": "Mathematics",
+                        "link": "1SRhrnQVbu2qTR02OhGANbzRgPlszkCMo"
+                    },
+                    {
+                        "name": "English",
+                        "link": "1lv4BjtzGDqofEVzlexQ8Qpjwu3MmYqMC"
+                    },
+                    {
+                        "name": "Physics",
+                        "link": "1RctX_cd7Kn5DVvktpk5G5KGOhdMK6Cyi"
+                    },
+                    {
+                        "name": "Chemistry",
+                        "link": "1Njy37Z9GF_DvGYPccVVk3xhaUztuTN8C"
+                    },
+                    {
+                        "name": "Biology",
+                        "link": "1l6-02lqjAekHN1c4BvE6D_hEdHej8EFw"
+                    }
+                ]
+            }
+        ]
+    }
+]
