@@ -25,7 +25,7 @@ const Course = () => {
     useEffect(() => {
         const getcourse = async () => {
             try {
-                    const res = await axios.get(`http://localhost:4000/notes`);
+                    const res = await axios.get(`https://noteflix-backend.onrender.com/notes`);
                     setCourseData(res.data);
             } catch (error) {
                 console.log(error);
