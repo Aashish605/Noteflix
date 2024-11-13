@@ -10,7 +10,7 @@ const Syllabus_list = () => {
     useEffect(() => {
         const sendData = async () => {
             try {
-                const response = await axios.post("http://localhost:4000/course", `${course}`, {
+                const response = await axios.post("/api/course", `${course}`, {
                     headers: {
                         'Content-Type': 'text/plain',
                     },
