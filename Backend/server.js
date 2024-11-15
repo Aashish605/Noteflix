@@ -21,7 +21,7 @@ app.use(cors())
 const PORT = process.env.PORT || 3000
 const Mongo = process.env.Mongo
 
-app.get('/api/', function (req, res) {
+app.get('/', function (req, res) {
     res.send('Hello World')
 })
 
