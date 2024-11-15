@@ -39,18 +39,18 @@ try {
 
 let postData = null
 
-app.post('/api/course',bodyParser.text(), (req, res, next) => {
+app.post('/course',bodyParser.text(), (req, res, next) => {
     postData = req.body
     res.status(201).send({ message: 'Course created successfully' });
 });
 
-app.use('/api/notes', (req, res, next) => {
+app.use('/notes', (req, res, next) => {
     const name = postData || "BCA";
     req.name = name;
     next();
 });
 
-app.use('/api/notes', courseroute);
+app.use('/notes', courseroute);
 
 
 app.use("/api/papers", (req, res, next) => {
