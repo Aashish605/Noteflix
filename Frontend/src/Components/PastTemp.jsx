@@ -10,7 +10,7 @@ const Course = () => {
     useEffect(() => {
         const sendData = async () => {
             try {
-                const response = await axios.post("/api/course", `${course}`, {
+                const response = await axios.post("https://noteflix-backend.onrender.com/course", `${course}`, {
                     headers: {
                         'Content-Type': 'text/plain',
                     },
@@ -27,7 +27,7 @@ const Course = () => {
     useEffect(() => {
         const getcourse = async () => {
             try {
-                const res = await axios.get(`/api/papers`);
+                const res = await axios.get(`https://noteflix-backend.onrender.com/papers`);
                 setCourseData(res.data);
                 console.log(res.data);
             } catch (error) {

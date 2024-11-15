@@ -50,7 +50,8 @@ const Navbar = () => {
                             <li className="mx-4 my-10"><NavLink className={({ isActive }) => ` hover:text-slate-600 ${isActive ? " text-tertiary hover:text-tertiary" : ""}`} to='/'>Home</NavLink></li>
                             <li className="mx-4 my-10"><NavLink className={({ isActive }) => ` hover:text-slate-600 ${isActive ? " text-tertiary hover:text-tertiary" : ""}`} to='/notes'>Notes</NavLink></li>
                             <li className="mx-4 my-10"><NavLink className={({ isActive }) => ` hover:text-slate-600 ${isActive ? " text-tertiary hover:text-tertiary" : ""}`} to='/pastpapers'>Past Papers</NavLink></li>
-                            <li className="mx-4 my-10"><NavLink className={({ isActive }) => ` hover:text-slate-600 ${isActive ? " text-tertiary hover:text-tertiary" : ""}`} to='/contact'>Contact</NavLink></li>
+                            <li className="mx-4 my-10"><NavLink className={({ isActive }) => ` hover:text-slate-600 ${isActive ? " text-tertiary hover:text-tertiary" : ""}`} to='/syllabus'>Syllabus</NavLink></li>
+                            <li className="mx-4 my-10"><NavLink className={({ isActive }) => ` hover:text-slate-600 ${isActive ? " text-tertiary hover:text-tertiary" : ""}`} to='/aboutus'>About Us</NavLink></li>
                         </ul>
                     </div>
                 </div>
@@ -83,7 +84,7 @@ const Navbar = () => {
                                     <li className="px-10 py-4"><NavLink to='/syllabus/BE' className={({ isActive }) => ` hover:text-slate-600 ${isActive ? " text-tertiary hover:text-tertiary" : ""}`} >BE</NavLink></li>
                                 </ul>
                             </li>
-                            <li className="px-3 mr-8 flex items-center "><NavLink className={({ isActive }) => ` hover:text-slate-600 ${isActive ? " text-tertiary hover:text-tertiary" : ""}`} to='/contact'>Contact</NavLink></li>
+                            <li className="px-3 mr-8 flex items-center "><NavLink className={({ isActive }) => ` hover:text-slate-600 ${isActive ? " text-tertiary hover:text-tertiary" : ""}`} to='/aboutus'>About us</NavLink></li>
                         </ul>
                     </div>
             </div>

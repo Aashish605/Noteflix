@@ -21,7 +21,7 @@ app.use(cors())
 const PORT = process.env.PORT || 3000
 const Mongo = process.env.Mongo
 
-app.get('/api/', function (req, res) {
+app.get('/', function (req, res) {
     res.send('Hello World')
 })
 
@@ -39,44 +39,44 @@ try {
 
 let postData = null
 
-app.post('/api/course',bodyParser.text(), (req, res, next) => {
+app.post('/course',bodyParser.text(), (req, res, next) => {
     postData = req.body
     res.status(201).send({ message: 'Course created successfully' });
 });
 
-app.use('/api/notes', (req, res, next) => {
+app.use('/notes', (req, res, next) => {
     const name = postData || "BCA";
     req.name = name;
     next();
 });
 
-app.use('/api/notes', courseroute);
+app.use('/notes', courseroute);
 
 
-app.use("/api/papers", (req, res, next) => {
+app.use("/papers", (req, res, next) => {
     const name = postData || "All"
     req.name = name;
     next()
 }
 )
 
-app.use("/api/papers", paperroute)
+app.use("/papers", paperroute)
 
-app.use("/api/syllabus", (req, res, next) => {
+app.use("/syllabus", (req, res, next) => {
     const name = postData
     req.name = name;
     next()
 }
 )
 
-app.use("/api/syllabus", syllabusroute)
+app.use("/syllabus", syllabusroute)
 
-app.use("/api/search", searchroute)
+app.use("/search", searchroute)
 
 
 let message = null
 
-app.post('/api/contact', (req, res,next) => {
+app.post('/contact', (req, res,next) => {
     app.use(bodyParser.json())
     message = req.body
     console.log(req.body);
@@ -84,8 +84,8 @@ app.post('/api/contact', (req, res,next) => {
     res.status(201).send({ message: 'Message sent successfully' });
 })
 
-app.use("/api/contact", messageroute)
+app.use("/contact", messageroute)
 
-app.use("/api/search",searchroute)
+app.use("/search",searchroute)
 
 app.listen(PORT)    
