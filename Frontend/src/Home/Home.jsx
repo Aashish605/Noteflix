@@ -16,10 +16,10 @@ const Home = () => {
             navigate(`search/${value}`)
         }
     }
-    
+
     return (
         <>
-            <div onClick={closeSidebar} className="h-full  ">
+            <div onClick={closeSidebar}  className="h-full  ">
                 <div className=" w-full  flex flex-col items-center  md:flex-row  bg-primary      ">
                     <div className="md:w-1/2 flex flex-col mt-[10rem] mx-10 md:my-[10rem]  ">
                         <h1 className="text-5xl">Welcome to <span className="text-tertiary" >Noteflix</span></h1>

@@ -1,8 +1,10 @@
 import { NavLink } from "react-router-dom";
+import { useSidebar } from "../Components/SidebarContext";
 const Notes = () => {
+  const { closeSidebar } = useSidebar();
   return (
     <>
-      <div className="bg-secondary text-white h-fit">
+      <div onClick={closeSidebar} className="bg-secondary text-white h-fit">
         <h1 className="text-3xl md:text-4xl w-[80vw] mx-auto py-16 text-center">A complete Syllabus based notes of BSC.CSIT,BCA and BE</h1>
         <div className="w-[70vw] flex flex-wrap text-black gap-8 py-20  mx-auto justify-center ">
           <NavLink className="" to='/notes/CSIT' ><div className="bg-primary cursor-pointer group  w-[200px] h-[25vh] shadow-md  rounded-md grow flex items-center justify-center text-2xl relative">
